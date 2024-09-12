@@ -1,0 +1,29 @@
+.card_navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.box_links-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn_menu {
+    display: none;
+}
+
+
+// desktop / mobile
+@media(max-width: 750px) {
+    .btn_menu {
+        display: flex;
+    }
+
+    .box_links-navigation {
+        display: none;
+    }
+}
