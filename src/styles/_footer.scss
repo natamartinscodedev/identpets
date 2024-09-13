@@ -1,0 +1,35 @@
+.container_footer {
+    background:  rgb(76, 76, 76);
+}
+
+.container_footer-box-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+
+    ul {
+        list-style: none;
+        text-align: center;
+        color: #f1f1f1;
+    }
+}
+
+.container_footer-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #f1f1f1;
+}
+
+.container_footer-box-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    
+}
