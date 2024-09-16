@@ -1,9 +1,16 @@
 .btn-register {
+    max-width:10rem;
+    width: 100%;
     background: linear-gradient(106.92deg, #FFDC26 38.34%, #E0AF00 71.57%);
     color: #fff;
-    padding: 5px 2rem;
+    padding: 10px 2rem;
     border-radius: 2rem;
     border: none;
-
     font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+        background: linear-gradient(106.92deg, #f6d325 38.34%, #977602 71.57%);
+        scale: 1.1;
+    }
 }

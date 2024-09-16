@@ -1,17 +1,48 @@
 .card_info_home {
-    display: grid;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin-bottom: 5rem;
+}
+
+.card_register-info-home {
+    max-width: 50rem;
+    width: 100%;
+    text-align: center;
+}
+
+.card_info-secondy {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     align-content: center;
-    text-align: center;
     margin: 0 auto;
+}
 
-    margin-bottom: 3rem;
+.card_info-secondy-info {
+    max-width: 50rem;
+    width: 100%;
+    text-align: center;
+}
+
+.card_info-secondy-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        max-width: 50rem;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .card_img-info-home {
-    max-width: 15rem;
+    max-width: 35rem;
     width: 100%;
     margin: 0 auto;
 
@@ -19,19 +50,11 @@
     grid-row: 2;
     grid-area: 2;
 
-
-
     img {
         width: 100%;
         height: 100%;
-
+        object-fit: contain;
     }
-}
-
-.register-info-home {
-    grid-column: 1;
-    grid-row: 1;
-    grid-area: 1;
 }
 
 // secondy section
@@ -55,7 +78,6 @@
 // cestion tortyare
 .cards_staps {
     display: flex;
-    flex-direction: column;
     margin: 0 auto;
     gap: 2rem;
 }
@@ -68,6 +90,7 @@
     text-align: center;
 
     img {
+        max-width: 10rem;
         width: 100%;
         height: 100%;
     }
@@ -76,12 +99,10 @@
 // section info services
 .card_list-info-tortyare {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     align-items: center;
     text-align: center;
     margin: 0 auto;
-    gap: 2rem;
+    gap: 5rem;
 
     li {
         display: flex;
@@ -91,7 +112,7 @@
         font-weight: bold;
 
         img {
-            max-width: 5rem;
+            max-width: 7rem;
             width: 100%;
             height: 100%;
             object-fit: contain;
@@ -102,27 +123,36 @@
 
 // card_info-tortyare
 .card_info-tortyare {
+    width: 100%;
+    height: 100%;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 
-    margin-bottom: 3rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
 
     h3 {
-        font-size: 2rem;
+        font-size: 3rem;
         margin-bottom: 5rem;
     }
 }
 
 // card_icons-ifo-section-fourth
 .card_icons-ifo-section-fourth {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-bottom: 15rem;
 
-    margin-bottom: 3rem;
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 8rem;
+    }
 }
 
 // card_dog-fifth
@@ -147,10 +177,10 @@
 
 .card_dog-fifth {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    // flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    gap: 3rem;
+    // gap: 3rem;
     padding: 10px;
     margin-bottom: 2rem;
 
@@ -175,8 +205,19 @@
     }
 }
 
+.card_dog-fifth-box-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_dog-fifth-box-info-feedback {
+    max-width: 30rem;
+    width: 100%;
+}
+
 .card_dog-fifth-box-info-feedback img {
-    max-width: 5rem;
+    max-width: 10rem;
     width: 100%;
     height: 100%;
 }
@@ -188,7 +229,7 @@
 }
 
 .img-profile-info-feedback img {
-    max-width: 5rem;
+    max-width: 8rem;
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -196,7 +237,7 @@
 }
 
 .card_dog-fifth-box-img img {
-    max-width: 10rem;
+    max-width: 50rem;
     width: 100%;
     height: 100%;
     margin-bottom: -0.9rem;
@@ -209,18 +250,185 @@
 
 // card_help
 .card_help {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 2rem;
+    padding: 10rem 0px;
+
 
     h3 {
-        font-size: 2rem;
+        font-size: 3rem;
         margin-bottom: 1rem;
     }
 
-    p, b {
+    p,
+    b {
         color: #989898;
+        font-size: 1.5rem;
+    }
+}
+
+// Mobile
+@media(max-width: 750px) {
+    .card_info_home {
+        display: grid;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+    }
+
+    .card_register-info-home {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .card_img-info-home {
+        max-width: 15rem;
+        width: 100%;
+        margin: 0 auto;
+
+        grid-column: 2;
+        grid-row: 2;
+        grid-area: 2;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .register-info-home {
+        grid-column: 1;
+        grid-row: 1;
+        grid-area: 1;
+    }
+
+    // section info services
+    .card_list-info-tortyare {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        gap: 2rem;
+
+        li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+
+            img {
+                max-width: 5rem;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    // card_info-tortyare
+    .card_info-tortyare {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        margin-bottom: 3rem;
+
+        h3 {
+            font-size: 2rem;
+            margin-bottom: 5rem;
+        }
+    }
+
+    //  card dog  fifth
+    .card_dog-fifth {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        padding: 10px;
+        margin-bottom: 2rem;
+
+        background: #e5e5e58f;
+    }
+
+    .card_dog-fifth-box-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card_dog-fifth-box-info-feedback {
+        max-width: 100%;
+    }
+
+    .card_dog-fifth-box-info-feedback img {
+        max-width: 5rem;
+    }
+
+    .card_help {
+        h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p,
+        b {
+            color: #989898;
+            font-size: 1rem;
+        }
+    }
+
+    .card_icons-ifo-section-fourth {
+        margin-bottom: 5rem;
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 5rem;
+        }
+    }
+
+    // cestion tortyare
+    .cards_staps {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        gap: 1rem;
+    }
+
+    .card_steps {
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    // card_dog-fifth
+    .container_dog-fifth {
+        padding-top: 5rem;
+        margin-bottom: -5rem;
+
+        h3 {
+            margin-bottom: 5rem;
+        }
     }
 }

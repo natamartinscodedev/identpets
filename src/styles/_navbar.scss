@@ -17,6 +17,12 @@
     li {
         a {
             text-decoration: none;
+            color: #FFDC26;
+            animation: ease-in-out;
+
+            &:hover {
+                color: #977602;
+            }
         }
     }
 }

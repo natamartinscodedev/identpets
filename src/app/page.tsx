@@ -35,7 +35,7 @@ export default function Home() {
         </section>
 
         <section className="card_info-secondy container">
-          <div>
+          <div className="card_info-secondy-info">
             <CardInfoRegistPat
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mollis sed viverra posuere malesuada. At et pharetra diam vel. Quis dignissim maecenas lectus vestibulum, sed. Risus est accumsan euismod ut at consequat."
             />
@@ -105,9 +105,9 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="card_dog-fifth-box-img">
-              <Image src={DogSmaill} alt="" />
-            </div>
+          </div>
+          <div className="card_dog-fifth-box-img">
+            <Image src={DogSmaill} alt="" />
           </div>
         </section>
 
