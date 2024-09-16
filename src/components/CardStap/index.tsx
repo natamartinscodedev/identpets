@@ -1,11 +1,11 @@
 "use client"
 
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import React from 'react'
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 
 interface typeItemsStep {
-    img: any,
+    img: string | StaticImageData,
     title: string,
     description: string
 }
