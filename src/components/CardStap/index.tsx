@@ -4,13 +4,13 @@ import Image from 'next/image'
 import React from 'react'
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 
-interface typeItems {
-    img: any,
+interface typeItemsStep {
+    img: string,
     title: string,
     description: string
 }
 
-const Index = ({ img, title, description }: typeItems) => {
+const Index = ({ img, title, description }: typeItemsStep) => {
     return (
         <div className='card_steps'>
             <Image src={img} alt={title} />
