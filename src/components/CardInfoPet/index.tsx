@@ -4,8 +4,10 @@ import React from 'react'
 import Logo from '@/components/Logo/index'
 import ButtomRegister from '@/components/buttom/index'
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+
 interface typeItems {
-  description: any;
+  description: string;
 }
 
 const Index = ({ description }: typeItems) => {
