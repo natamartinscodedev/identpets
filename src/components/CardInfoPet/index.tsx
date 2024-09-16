@@ -5,7 +5,7 @@ import Logo from '@/components/Logo/index'
 import ButtomRegister from '@/components/buttom/index'
 
 interface typeItems {
-  description: string;
+  description: any;
 }
 
 const Index = ({ description }: typeItems) => {
