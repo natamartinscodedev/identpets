@@ -4,8 +4,9 @@ import "@/styles/style.scss";
 
 const roboto = Roboto({
   subsets: ["latin"],
-  weight: '700'
+  weight: "700",
 });
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,9 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={roboto.className}>
-        {children}
-      </body>
+      <body className={roboto.className}>{children}</body>
     </html>
   );
 }
